@@ -91,6 +91,8 @@ public function signup( Request $request){
      }
     public function upload(Request $request)
     {
+    //    var_dump ( json_decode($request->getContent()));
+    //    die();
         $current_timestamp = Carbon::now()->timestamp; 
         $data = array();
         $image = json_decode($request->getContent())->imageBase;

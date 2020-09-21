@@ -17,7 +17,8 @@ export class NotificationsPage implements OnInit {
 
   postData = {};
   playlist: Track [] = [];
-  base_url: string = 'http://127.0.0.1:8000/public/upload/'
+  // base_url: string = 'http://127.0.0.1:8000/public/upload/'
+  base_url:string = 'http://xalofa.com/public/upload/'
   constructor(
     private httpService: HttpService, private youtube: YoutubeVideoPlayer, 
     private authService: AuthService) { }

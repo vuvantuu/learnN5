@@ -23,7 +23,8 @@
     name: string = "";
     email: string = "";
     myPhoto:any = "";
-    base_url: string = 'http://127.0.0.1:8000/public/upload/'
+    // base_url: string = 'http://127.0.0.1:8000/public/upload/'
+    base_url:string = 'http://xalofa.com/public/upload/'
     postData = {
       token: ""
     };

@@ -7,10 +7,11 @@
 <ion-content>
   <ion-row class= "ion-text-center">
      <ion-col size="12" center>
-      <div id="ProfilePic" ><ion-buttons  id="thumbnail"  share="round" color='default' (click)="getPic()"  *ngIf='image == "http://127.0.0.1:8000/public/upload/"'> <ion-icon name="contact"></ion-icon>  </ion-buttons></div>
+      <div id="ProfilePic" ><ion-buttons  id="thumbnail"  share="round" color='default' (click)="getPic()"  *ngIf='image == "http://xalofa.com/public/upload/"'> <ion-icon name="contact"></ion-icon>  </ion-buttons></div>
      <div class="vertical-center">
+      <!-- "http://xalofa.com/public/upload/, http://127.0.0.1:8000/public/upload/" -->
       <div class="center">
-       <ion-img [src]= "image"  style="text-align:center;width: 100px; height: 100px;" *ngIf='image != "http://127.0.0.1:8000/public/upload/"'> </ion-img>     
+       <ion-img [src]= "image"  (click)="getPic()"  style="text-align:center;width: 100px; height: 100px;" *ngIf='image != "http://xalofa.com/public/upload/"'> </ion-img>     
        </div>   
    </div>
 
