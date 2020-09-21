@@ -97,11 +97,14 @@
     takePicture(sourceType: PictureSourceType) {
     
       var options: CameraOptions = {
-        quality: 100,
+        quality: 50,
         sourceType: sourceType,
         destinationType: this.camera.DestinationType.DATA_URL,
-        encodingType: this.camera.EncodingType.JPEG,
-        mediaType: this.camera.MediaType.PICTURE
+        // encodingType: this.camera.EncodingType.JPEG,
+        mediaType: this.camera.MediaType.PICTURE,
+        allowEdit:true,
+        targetHeight: 100,
+        encodingType: this.camera.EncodingType.PNG
       }
       this.camera.getPicture(options).then((imageData) => {
         // imageData is either a base64 encoded string or a file URI
